@@ -21,7 +21,7 @@ if [ ! -d $CODE_DIR/.git ]; then
 else 
   echo "xdd-plus 核心代码已存在"
   echo "更新 xdd-plus 核心代码"
-  cd $CODE_DIR && git reset --hard && git pull
+  cd $CODE_DIR && git config --global --add safe.directory /xdd-plus && git reset --hard && git pull
 fi
 
 if [ -f "./xdd-plus" ]; then
