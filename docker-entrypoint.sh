@@ -27,7 +27,7 @@ fi
 if [ -f "./xdd-plus" ]; then
   rm -rf ./xdd-plus
 fi
-go build -o ./xdd-plus
+go build -buildvcs=false -o ./xdd-plus
 chmod +x ./xdd-plus
 
 
